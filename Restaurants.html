@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap (keep these links in the current order) -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Niconne"
+          rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title></title>
+
+    <style>
+        
+        
+        @media (min-width: 768px) {
+            .q1 {
+                /*padding: 12%;*/
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+        }
+        
+        
+        
+        @media (min-width: 576px) and (max-width: 768px) {
+            .q1 {
+                /*padding: 19%;*/
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+        }
+
+        @media (max-width: 576px) {
+            .q1 {
+                /*padding: 37%;*/
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+        }
+       
+        
+       
+
+        .overimg{
+            color : white;
+            z-index: 5;
+                        
+
+        }
+
+        .q1 {
+            background-size:100% 100%;
+            height:360px;
+            padding:0px;
+            position:relative;
+
+        }
+
+        .overlay2 {
+            
+    
+            background: rgba(31, 20, 20, 0.7);
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+
+            padding-top: 50px;
+            text-align:center;
+            color:white;
+        }
+
+        .button{
+            background-color: lightblue;
+            color:white;
+            border-radius:5%;
+            height:40px;
+            border:none;
+            text-align:center;
+            font-size:1.3em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="Index.html">Canberra Resturants</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuisines.html">Cuisines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dishes.html">Dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Prices.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactAbout.html">Contact & About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="parallax">
+        <div class="overlay">
+
+            <center>
+                <p id="box">CANBERRA<br />RESTUARANTs</p>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <p id="theunderbox">Restuarants</p>
+
+            </center>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo1" onclick="mousclickfunc1()" style="background-image: url('images/location/bellucis_logo.jpg');  ">
+
+                <div class="overlay2">
+
+                    <h1>Belluci’s Italian</h1>
+                    <p>"Belluci's demonstrates a new concept, a new food philosophy – the dawn of a new era in Canberra dining. Having been established more than 20 years ago, Belluci's fast became an iconic name in Canberra. To bring you the finest dishes, we’ve gone back to traditional Italian routes, creating simple, rustic food." <br />Belluci's Italian Website.</p>
+                    <form action="https://bellucis.com.au/home.php" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo2" onclick="mousclickfunc2()" style="background-image: url('images/location/is_logo.jpg');  ">
+
+                <div class="overlay2">
+                    <h1>Italian and Sons</h1>
+                    <p>
+                        "A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily
+                        changing main dishes of the day such as their wood roast suckling pig, rosemary,
+                        garlic, baked baby fennel & mustard fruits."<br /> Australian Good Food Guide.
+                    </p>
+                    <form action="http://italianandsons.com.au/" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo3" onclick="mousclickfunc3()" style="background-image: url('images/location/bluginger_logo.jpg'); ">
+                <div class="overlay2">
+                    <h1>Blu Ginger</h1>
+                    <p>: "At Blu Ginger we use only the freshest locally sourced produce, combined with authentic spices imported directly from the sub-continent, to offer classic, traditional recipes with a modern twist, creating a unique and memorable dining experience for you."<br /> Blu Ginger Website.</p>
+                    <form action="http://www.bluginger.com.au/" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo4" onclick="mousclickfunc4()" style="background-image: url('images/location/jewel_logo.jpg'); ">
+
+                <div class="overlay2">
+                    <h1>Jewel of India</h1>
+                    <p>"Finding a balance between dishes inspired by authentic recipes and creating a modern take on classic cuisine sees a loyal following of Canberra locals returning for a mouth-watering feast." <br />Australian Good Food Guide Website.</p>
+                    <form action="http://www.jewelofindia.com.au/" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo5" onclick="mousclickfunc5()" style="background-image: url('images/location/chairman_logo.jpg');">
+
+                <div class="overlay2">
+                    <h1>Chairman & Yip</h1>
+                    <p>The Chairman & Yip has become one of Canberra’s longest standing and most highly regarded institutions, having received numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations.</p>
+                    <form action="http://chairmangroup.com.au/chairmanyip/" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo6" onclick="mousclickfunc6()" style="background-image: url('images/location/noodle_logo.jpg');">
+
+                <div class="overlay2">
+                    <h1>Dickson Asian Noodle House</h1>
+                    <p>"The Dickson Asian Noodle House specialises in traditional Malaysian, Thai and Lao cuisine. The dining atmosphere is casual and cosy providing for a la carte dining, banquets and take away."<br /> Vibe FM Website.</p>
+                    <form action="https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038" method="get" target="_blank">
+                        <button type="submit" class="button">WEB SITE</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="parallax" style="height:200px;">
+        <div class="overlay">
+
+
+        </div>
+
+    </div>
+
+
+    <div id="bgimage" class="centre">  </div>
+
+
+    <!--
+    <div class="container-fluid">
+
+        <div class="row">
+            <div  >
+                <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo1" style="background-image: url('images/location/bellucis_logo.jpg');"></div>
+
+                <div class="overimg">
+                    <h1 class="overimg">tugtuj</h1>
+                    <p></p>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" q1" id="photo2" style="background-image: url('images/location/is_logo.jpg'); position:relative; "></div>
+
+                <div class="overimg">
+                    <h1  style="">Italian and Sons</h1>
+                    <p style="position:absolute;">
+                        "A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily
+                        changing main dishes of the day such as their wood roast suckling pig, rosemary,
+                        garlic, baked baby fennel & mustard fruits."<br /> Australian Good Food Guide.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo3" style="background-image: url('images/location/bluginger_logo.jpg'); ">
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo4" style="background-image: url('images/location/jewel_logo.jpg'); ">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo5" style="background-image: url('images/location/chairman_logo.jpg');">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 q1" id="photo6" style="background-image: url('images/location/noodle_logo.jpg');">
+            </div>
+
+
+
+
+        </div>
+    </div>
+        -->
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/site.js"></script>
+
+    <footer>
+        <hr style="background-color:gray" />
+        <p style="color: gray">@ - Canberra Restaurants. All Right Reserved</p>
+    </footer>
+
+</body>
+</html>

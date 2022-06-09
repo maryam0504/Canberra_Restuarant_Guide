@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap (keep these links in the current order) -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Niconne"
+          rel="stylesheet" type="text/css">
+    <title></title>
+
+    <style>
+        
+
+
+
+        /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+  
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="Index.html">Canberra Resturants</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuisines.html">Cuisines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dishes.html">Dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Prices.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactAbout.html">Contact & About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="parallax2">
+        <div class="overlay">
+
+            <center>
+                <p id="box">CANBERRA<br />RESTUARANTs</p>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <p id="theunderbox">contact & about</p>
+
+            </center>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <center>
+        <h3 class="font">Click the word below to see the contact & info</h3>
+        <br /><br />
+        <div class="popup" onclick="myFunction()">
+            <p style="color:orange; font-size:36px; "> Click me!</p>
+            <span class="popuptext" id="myPopup">
+                All rights reserved to the makers of the site. <br />All photos are owned by the owners of the mentioned restaurants.<br />For more information, please contact the owners of the mentioned restuarants.
+                <br />@ - Canberra Restaurants All Right Reserved.
+            </span>
+        </div>
+
+        <div id="divv" style="font-family:Niconne; font-size: 35px; color:darkgray"></div>
+
+
+    </center>
+
+    
+
+    
+
+    <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+    document.getElementById("divv").innerHTML = "All rights reserved to the makers of the site. <br />All photos are owned by the owners of the mentioned restaurants.<br />For more information, please contact the owners of the mentioned restuarants.        <br />  Canberra Restaurants All Right Reserved.";
+    
+}
+    </script>
+
+    <footer>
+        <hr style="background-color:gray" />
+        <p style="color: gray">@ - Canberra Restaurants. All Right Reserved</p>
+    </footer>
+
+
+
+
+</body>
+</html>
